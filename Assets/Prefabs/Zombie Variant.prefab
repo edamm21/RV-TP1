@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1750036454947828, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
       propertyPath: m_Name
-      value: Zombie
+      value: Zombie Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4286830457523408, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
       propertyPath: m_RootOrder
@@ -104,6 +104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   thisObject: {fileID: 572818483831449000}
-  zombieVelocity: 0.01
+  zombieVelocity: 0.001
   playerObject: {fileID: 0}
   zombiesKilledText: {fileID: 0}
