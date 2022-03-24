@@ -15,7 +15,7 @@ public class Chasing : MonoBehaviour {
     private void Start() {
         camera = GameObject.FindObjectOfType<Camera>();
         playerObject = GameObject.Find("Player");
-        zombiesKilledText = Text.FindObjectOfType<Text>();
+        zombiesKilledText = GameObject.Find("Zombies killed text").GetComponent<Text>();
     }
     
     private void Update() {
@@ -32,6 +32,7 @@ public class Chasing : MonoBehaviour {
         if (collision.collider.name == "Bullet(Clone)") {
             Player player = playerObject.GetComponent<Player>();
             player.zombiesKilled++;
+            player.zombieCount--;
             zombiesKilledText.text = "Zombies killed:" + player.zombiesKilled;
             Destroy(thisObject); // remove zombie from game
             Destroy(collision.gameObject); // remove the colliding bullet as well

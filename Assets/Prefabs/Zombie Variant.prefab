@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1750036454947828, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
+      propertyPath: m_TagString
+      value: zombie
+      objectReference: {fileID: 0}
     - target: {fileID: 4286830457523408, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -83,6 +87,18 @@ PrefabInstance:
       propertyPath: m_moveSpeed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 136541158847485364, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
+      propertyPath: m_Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136541158847485364, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 136541158847485364, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
+      propertyPath: m_Center.z
+      value: 0.06666696
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2869f50f08793594889040a0ec4b691e, type: 3}
 --- !u!1 &572818483831449000 stripped
@@ -104,6 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   thisObject: {fileID: 572818483831449000}
-  zombieVelocity: 0.001
+  zombieVelocity: 0.05
   playerObject: {fileID: 0}
   zombiesKilledText: {fileID: 0}
